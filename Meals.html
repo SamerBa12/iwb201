@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>الوجبات</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+<nav>
+    <a href="home.html">الرئيسية</a>
+    <a href="AboutUs.html">من نحن</a>
+    <a href="Meals.html">الوجبات</a>
+</nav>
+
+<main>
+    <h1>قائمة الوجبات</h1>
+
+    <div class="card" style="padding:0; overflow:hidden;">
+        <table>
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>الوجبة</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="code">SF-001</td>
+                    <td class="mname">وجبة سمك بوري مشوي لشخصين</td>
+                    <td class="price">110,000 ل.س</td>
+                    <td><button class="toggle-btn" data-target="d001">+</button></td>
+                    <td><input type="checkbox" class="select-checkbox" /></td>
+                </tr>
+                <tr class="detail-row" id="d001">
+                    <td colspan="5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Grilled_fish.jpg/320px-Grilled_fish.jpg"
+                             alt="سمك بوري"
+                             onerror="this.src='https://placehold.co/160x110?text=SF-001'" />
+                        <p><strong>المطبخ:</strong> المصري &nbsp;|&nbsp; <strong>التصنيف:</strong> مأكولات بحرية</p>
+                        <p><strong>المكونات:</strong> 4 سمكات بوري أحمر، أوريجانو طازج، ملح، فلفل أسود.</p>
+                        <p><strong>الصلصة:</strong> زيت زيتون، ثوم، فلفل أحمر، إكليل الجبل، طماطم، ليمون.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="code">SF-002</td>
+                    <td class="mname">سمك سيباس مشوي بالليمون والثوم</td>
+                    <td class="price">95,000 ل.س</td>
+                    <td><button class="toggle-btn" data-target="d002">+</button></td>
+                    <td><input type="checkbox" class="select-checkbox" /></td>
+                </tr>
+                <tr class="detail-row" id="d002">
+                    <td colspan="5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Grilled_fish_2.jpg/320px-Grilled_fish_2.jpg"
+                             alt="سمك سيباس"
+                             onerror="this.src='https://placehold.co/160x110?text=SF-002'" />
+                        <p><strong>المطبخ:</strong> متوسطي &nbsp;|&nbsp; <strong>التصنيف:</strong> مأكولات بحرية</p>
+                        <p><strong>المكونات:</strong> سمكة سيباس 700 غ، عصير ليمون، ثوم مهروس، زيت زيتون، ملح، فلفل، زعتر.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="code">SF-003</td>
+                    <td class="mname">طبق مأكولات بحرية مشكلة</td>
+                    <td class="price">150,000 ل.س</td>
+                    <td><button class="toggle-btn" data-target="d003">+</button></td>
+                    <td><input type="checkbox" class="select-checkbox" /></td>
+                </tr>
+                <tr class="detail-row" id="d003">
+                    <td colspan="5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Seafood_platter.jpg/320px-Seafood_platter.jpg"
+                             alt="مأكولات بحرية"
+                             onerror="this.src='https://placehold.co/160x110?text=SF-003'" />
+                        <p><strong>المطبخ:</strong> عالمي &nbsp;|&nbsp; <strong>التصنيف:</strong> مشكل بحري</p>
+                        <p><strong>المكونات:</strong> روبيان 200 غ، كالاماري 150 غ، فيليه سمك 200 غ، بلح البحر، صوص أيولي.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="code">SF-004</td>
+                    <td class="mname">روبيان مشوي بالزبدة والثوم</td>
+                    <td class="price">130,000 ل.س</td>
+                    <td><button class="toggle-btn" data-target="d004">+</button></td>
+                    <td><input type="checkbox" class="select-checkbox" /></td>
+                </tr>
+                <tr class="detail-row" id="d004">
+                    <td colspan="5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Grilled_shrimp_skewers.jpg/320px-Grilled_shrimp_skewers.jpg"
+                             alt="روبيان مشوي"
+                             onerror="this.src='https://placehold.co/160x110?text=SF-004'" />
+                        <p><strong>المطبخ:</strong> أمريكي &nbsp;|&nbsp; <strong>التصنيف:</strong> مأكولات بحرية</p>
+                        <p><strong>المكونات:</strong> 500 غ روبيان مقشر، زبدة، ثوم مهروس، بقدونس، عصير ليمون، ملح، فلفل أبيض.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="code">SF-005</td>
+                    <td class="mname">سمك حنكليس مقلي بالتتبيلة</td>
+                    <td class="price">85,000 ل.س</td>
+                    <td><button class="toggle-btn" data-target="d005">+</button></td>
+                    <td><input type="checkbox" class="select-checkbox" /></td>
+                </tr>
+                <tr class="detail-row" id="d005">
+                    <td colspan="5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fried_fish.jpg/320px-Fried_fish.jpg"
+                             alt="سمك مقلي"
+                             onerror="this.src='https://placehold.co/160x110?text=SF-005'" />
+                        <p><strong>المطبخ:</strong> شامي &nbsp;|&nbsp; <strong>التصنيف:</strong> مأكولات بحرية</p>
+                        <p><strong>المكونات:</strong> سمك حنكليس 600 غ، دقيق، بهارات سمك، عصير ليمون، زيت للقلي، صوص طحينة.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="code">SF-006</td>
+                    <td class="mname">كالاماري مقلي بصوص الليمون</td>
+                    <td class="price">75,000 ل.س</td>
+                    <td><button class="toggle-btn" data-target="d006">+</button></td>
+                    <td><input type="checkbox" class="select-checkbox" /></td>
+                </tr>
+                <tr class="detail-row" id="d006">
+                    <td colspan="5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Calamari_fritti.jpg/320px-Calamari_fritti.jpg"
+                             alt="كالاماري"
+                             onerror="this.src='https://placehold.co/160x110?text=SF-006'" />
+                        <p><strong>المطبخ:</strong> إيطالي &nbsp;|&nbsp; <strong>التصنيف:</strong> مقبلات بحرية</p>
+                        <p><strong>المكونات:</strong> 400 غ كالاماري حلقات، دقيق وبقسماط، بيضة، بابريكا، زيت، صوص ليمون وثوم.</p>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <button id="continue-btn">متابعة</button>
+
+    <div id="order-form-section">
+        <h2>بيانات الطلب</h2>
+        <div class="card">
+            <p style="color:#888; font-size:14px;">رقم الحساب المصرفي حقل إلزامي — باقي الحقول اختيارية</p>
+
+            <form id="order-form" novalidate>
+
+                <label for="fullname">الاسم الكامل (إنكليزي)</label>
+                <input type="text" id="fullname" placeholder="مثال: Ahmad Mohammad" />
+                <div class="error-msg" id="fullname-err">الاسم يجب أن يكون حرفين إنكليزيين بينهما مسافة واحدة فقط</div>
+
+                <label for="bank">رقم الحساب المصرفي <span class="required">*</span></label>
+                <input type="text" id="bank" placeholder="6 أرقام — مثال: 055555" maxlength="6" />
+                <div class="error-msg" id="bank-err">يجب أن يكون رقم الحساب 6 أرقام بالضبط</div>
+
+                <label for="bdate">تاريخ الميلاد (yyyy-mm-dd)</label>
+                <input type="text" id="bdate" placeholder="مثال: 1995-08-20" />
+                <div class="error-msg" id="bdate-err">تاريخ غير صحيح، استخدم الصيغة yyyy-mm-dd</div>
+
+                <label for="mobile">رقم الموبايل (Syriatel / MTN)</label>
+                <input type="text" id="mobile" placeholder="مثال: 0941234567" maxlength="10" />
+                <div class="error-msg" id="mobile-err">الرقم يجب أن يبدأ بـ 09 ويتكون من 10 أرقام</div>
+
+                <button type="submit">إرسال</button>
+                <button type="reset" style="background:#888; margin-right:10px;">إعادة تعيين</button>
+
+            </form>
+        </div>
+    </div>
+
+</main>
+
+<div class="modal-bg" id="summary-modal">
+    <div class="modal">
+        <h3>ملخص الطلب</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>الوجبة</th>
+                    <th>السعر</th>
+                </tr>
+            </thead>
+            <tbody id="summary-rows"></tbody>
+        </table>
+        <div class="totals">
+            <p>المبلغ الإجمالي: <strong id="sum-total"></strong></p>
+            <p>الضريبة (10%): <strong id="sum-tax"></strong></p>
+            <p class="final">المبلغ الصافي بعد حسم الضريبة: <strong id="sum-net"></strong></p>
+        </div>
+        <button id="close-modal" style="margin-top:15px;">إغلاق</button>
+    </div>
+</div>
+
+<footer>
+    مطعم البحر الأزرق © 2026 — تصميم: محمد سامر بحري
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="myFunctions.js"></script>
+</body>
+</html>
